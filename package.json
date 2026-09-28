@@ -16,8 +16,7 @@
     "lint:fix": "biome check --write",
     "format": "biome format --write",
     "test": "node --enable-source-maps --test dist/",
-    "test:watch": "node --enable-source-maps --test --watch dist/",
-    "cz": "cz"
+    "test:watch": "node --enable-source-maps --test --watch dist/"
   },
   "keywords": [],
   "author": "",
@@ -25,8 +24,6 @@
     "@biomejs/biome": "2.5.14",
     "@tsconfig/recommended": "^1.0.7",
     "@types/node": "^20.16.0",
-    "commitizen": "^4.3.0",
-    "cz-conventional-changelog": "^3.3.0",
     "typescript": "^6.0.3"
   },
   "dependencies": {
