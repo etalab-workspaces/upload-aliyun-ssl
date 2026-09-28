@@ -12,8 +12,9 @@
   "scripts": {
     "dev": "tsc --project tsconfig.development.json --watch",
     "build": "tsc --project tsconfig.production.json",
-    "build:doc": "typedoc --tsconfig tsconfig.production.json",
-    "lint": "eslint",
+    "lint": "biome check",
+    "lint:fix": "biome check --write",
+    "format": "biome format --write",
     "test": "node --enable-source-maps --test dist/",
     "test:watch": "node --enable-source-maps --test --watch dist/",
     "cz": "cz"
@@ -21,17 +22,12 @@
   "keywords": [],
   "author": "",
   "devDependencies": {
-    "@eslint/js": "^9.9.0",
+    "@biomejs/biome": "2.5.14",
     "@tsconfig/recommended": "^1.0.7",
     "@types/node": "^20.16.0",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^9.9.0",
-    "globals": "^15.9.0",
-    "prettier": "^3.3.3",
-    "typedoc": "^0.26.5",
-    "typescript": "^5.5.4",
-    "typescript-eslint": "^8.1.0"
+    "typescript": "^6.0.3"
   },
   "dependencies": {
     "@alicloud/cas20200407": "^1.2.0",

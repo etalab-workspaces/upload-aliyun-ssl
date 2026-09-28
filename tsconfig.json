@@ -8,9 +8,9 @@
     "moduleResolution": "NodeNext" /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */,
     "removeComments": true /* Do not emit comments to output. */,
     "alwaysStrict": true /* Parse in strict mode and emit "use strict" for each source file. */,
-    "baseUrl": "./src" /* Base directory to resolve non-absolute module names. */,
     "skipLibCheck": true /* Skip type checking of declaration files. */,
     "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */,
+    "types": ["node"] /* TypeScript 6.0 no longer auto-includes all @types packages. */,
     "noEmitOnError": true,
     "strict": true
   },
