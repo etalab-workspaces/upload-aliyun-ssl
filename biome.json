@@ -20,6 +20,18 @@
       "preset": "recommended"
     }
   },
+  "overrides": [
+    {
+      "includes": ["src/tests/**/*.test.ts", "src/**/tests/**/*.test.ts"],
+      "linter": {
+        "rules": {
+          "complexity": {
+            "useLiteralKeys": "off"
+          }
+        }
+      }
+    }
+  ],
   "javascript": {
     "formatter": {
       "quoteStyle": "double",
