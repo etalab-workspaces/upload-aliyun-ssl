@@ -1,37 +1,21 @@
 {
-  "name": "my-node-project",
-  "version": "0.0.1",
-  "description": "",
+  "name": "upload-aliyun-ssl",
+  "version": "1.0.0",
+  "description": "将 acme.sh / certbot 生成的证书上传到阿里云 CAS 并自动绑定到 CDN 域名，基于 Bun 与阿里云 CLI 实现。",
   "type": "module",
-  "main": "dist/index.js",
-  "types": "types/index.d.ts",
-  "files": [
-    "dist",
-    "types"
-  ],
+  "module": "src/index.ts",
   "scripts": {
-    "dev": "tsc --project tsconfig.development.json --watch",
-    "build": "tsc --project tsconfig.production.json",
-    "lint": "biome check",
-    "lint:fix": "biome check --write",
+    "start": "bun run src/index.ts",
+    "test": "bun test",
+    "lint": "biome lint",
     "format": "biome format --write",
-    "test": "node --enable-source-maps --test dist/",
-    "test:watch": "node --enable-source-maps --test --watch dist/"
+    "check": "biome check"
   },
-  "keywords": [],
-  "author": "",
   "devDependencies": {
     "@biomejs/biome": "2.5.14",
-    "@tsconfig/recommended": "^1.0.7",
-    "@types/node": "^20.16.0",
-    "typescript": "^6.0.3"
+    "@types/bun": "latest"
   },
   "dependencies": {
-    "@alicloud/cas20200407": "^1.2.0",
-    "@alicloud/cdn20180510": "^4.0.0",
-    "@alicloud/openapi-client": "^0.4.11",
-    "dotenv": "^16.4.5",
-    "yaml": "^2.5.0",
-    "zod": "^3.23.8"
+    "zod": "^4.6.5"
   }
 }

@@ -1,10 +1,7 @@
 node_modules
 tmp
 
-dist
-types
-coverage
-
+# Real values, must not be committed
 .env
 config.yml
 
