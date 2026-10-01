@@ -1,5 +1,6 @@
-certFilePath: /path/to/certfile
-keyFilePath: /path/to/keyfile
+pemFilePaths:
+  cert: /path/to/certfile
+  key: /path/to/keyfile
 cdnDomainNames:
   - www.example1.com
   - www.example2.com

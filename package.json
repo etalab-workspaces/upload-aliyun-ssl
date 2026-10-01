@@ -9,11 +9,13 @@
     "test": "bun test",
     "lint": "biome lint",
     "format": "biome format --write",
-    "check": "biome check"
+    "check": "biome check",
+    "typecheck": "tsc"
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.14",
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "typescript": "^7.0.2"
   },
   "dependencies": {
     "zod": "^4.6.5"
